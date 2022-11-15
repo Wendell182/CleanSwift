@@ -23,6 +23,8 @@
 		F50BB5E62924199500598822 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5E52924199500598822 /* TestFactories.swift */; };
 		F50BB5E929241A2700598822 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5E829241A2700598822 /* HttpClientSpy.swift */; };
 		F50BB5EB29241A8100598822 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5EA29241A8100598822 /* AccountModelFactory.swift */; };
+		F50BB5F9292429FF00598822 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50BB5F1292429FF00598822 /* Infra.framework */; };
+		F50BB5FE292429FF00598822 /* AlamofireAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5FD292429FF00598822 /* AlamofireAdapterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F50BB56F2923247A00598822;
 			remoteInfo = Domain;
+		};
+		F50BB5FA292429FF00598822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50BB5582923235100598822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50BB5F0292429FF00598822;
+			remoteInfo = Infra;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,6 +82,9 @@
 		F50BB5E52924199500598822 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		F50BB5E829241A2700598822 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
 		F50BB5EA29241A8100598822 /* AccountModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelFactory.swift; sourceTree = "<group>"; };
+		F50BB5F1292429FF00598822 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50BB5F8292429FF00598822 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50BB5FD292429FF00598822 /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F50BB5EE292429FF00598822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50BB5F5292429FF00598822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50BB5F9292429FF00598822 /* Infra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +135,8 @@
 				F50BB5712923247A00598822 /* Domain */,
 				F50BB5B5292329F700598822 /* Data */,
 				F50BB5BF292329F700598822 /* DataTests */,
+				F50BB5F2292429FF00598822 /* Infra */,
+				F50BB5FC292429FF00598822 /* InfraTests */,
 				F50BB5622923235200598822 /* Products */,
 				F50BB5C929232A5800598822 /* Frameworks */,
 			);
@@ -119,6 +148,8 @@
 				F50BB5702923247A00598822 /* Domain.framework */,
 				F50BB5B4292329F700598822 /* Data.framework */,
 				F50BB5BB292329F700598822 /* DataTests.xctest */,
+				F50BB5F1292429FF00598822 /* Infra.framework */,
+				F50BB5F8292429FF00598822 /* InfraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +267,21 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		F50BB5F2292429FF00598822 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		F50BB5FC292429FF00598822 /* InfraTests */ = {
+			isa = PBXGroup;
+			children = (
+				F50BB5FD292429FF00598822 /* AlamofireAdapterTests.swift */,
+			);
+			path = InfraTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -247,6 +293,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F50BB5AF292329F700598822 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50BB5EC292429FF00598822 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,6 +365,42 @@
 			productReference = F50BB5BB292329F700598822 /* DataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F50BB5F0292429FF00598822 /* Infra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50BB600292429FF00598822 /* Build configuration list for PBXNativeTarget "Infra" */;
+			buildPhases = (
+				F50BB5EC292429FF00598822 /* Headers */,
+				F50BB5ED292429FF00598822 /* Sources */,
+				F50BB5EE292429FF00598822 /* Frameworks */,
+				F50BB5EF292429FF00598822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Infra;
+			productName = Infra;
+			productReference = F50BB5F1292429FF00598822 /* Infra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F50BB5F7292429FF00598822 /* InfraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50BB603292429FF00598822 /* Build configuration list for PBXNativeTarget "InfraTests" */;
+			buildPhases = (
+				F50BB5F4292429FF00598822 /* Sources */,
+				F50BB5F5292429FF00598822 /* Frameworks */,
+				F50BB5F6292429FF00598822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50BB5FB292429FF00598822 /* PBXTargetDependency */,
+			);
+			name = InfraTests;
+			productName = InfraTests;
+			productReference = F50BB5F8292429FF00598822 /* InfraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -333,6 +422,12 @@
 					F50BB5BA292329F700598822 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					F50BB5F0292429FF00598822 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F50BB5F7292429FF00598822 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = F50BB55B2923235100598822 /* Build configuration list for PBXProject "CleanSwift" */;
@@ -351,6 +446,8 @@
 				F50BB56F2923247A00598822 /* Domain */,
 				F50BB5B3292329F700598822 /* Data */,
 				F50BB5BA292329F700598822 /* DataTests */,
+				F50BB5F0292429FF00598822 /* Infra */,
+				F50BB5F7292429FF00598822 /* InfraTests */,
 			);
 		};
 /* End PBXProject section */
@@ -371,6 +468,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F50BB5B9292329F700598822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50BB5EF292429FF00598822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50BB5F6292429FF00598822 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,6 +525,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F50BB5ED292429FF00598822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50BB5F4292429FF00598822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50BB5FE292429FF00598822 /* AlamofireAdapterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -426,6 +552,11 @@
 			isa = PBXTargetDependency;
 			target = F50BB56F2923247A00598822 /* Domain */;
 			targetProxy = F50BB5CC29232A5800598822 /* PBXContainerItemProxy */;
+		};
+		F50BB5FB292429FF00598822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50BB5F0292429FF00598822 /* Infra */;
+			targetProxy = F50BB5FA292429FF00598822 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -708,6 +839,96 @@
 			};
 			name = Release;
 		};
+		F50BB601292429FF00598822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = claus.Infra;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F50BB602292429FF00598822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = claus.Infra;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F50BB604292429FF00598822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = claus.InfraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F50BB605292429FF00598822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = claus.InfraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -743,6 +964,24 @@
 			buildConfigurations = (
 				F50BB5C7292329F700598822 /* Debug */,
 				F50BB5C8292329F700598822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50BB600292429FF00598822 /* Build configuration list for PBXNativeTarget "Infra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50BB601292429FF00598822 /* Debug */,
+				F50BB602292429FF00598822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50BB603292429FF00598822 /* Build configuration list for PBXNativeTarget "InfraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50BB604292429FF00598822 /* Debug */,
+				F50BB605292429FF00598822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
