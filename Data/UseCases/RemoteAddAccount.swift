@@ -18,7 +18,8 @@ public final class RemoteAddAccount: AddAccount {
     }
     
     public func add(addCccountModel: AddAccountModel, completion: @escaping (Result<AccountModel, DomainError>) -> Void) {
-        httpClient.post(to: url, with: addCccountModel.toData()) { result in
+        httpClient.post(to: url, with: addCccountModel.toData()) { [weak self] result in
+            guard self != nil else { return }
             switch result {
             case .success(let data):
                 if let model: AccountModel = data.toModel() {
