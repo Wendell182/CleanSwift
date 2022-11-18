@@ -11,6 +11,10 @@ func makeInvalidData() -> Data {
     return Data("invalid_toninho".utf8)
 }
 
+func makeEmptyData() -> Data {
+    return Data()
+}
+
 func makeValidData() -> Data {
     return Data("{\"name\":\"WendellClaus\"}".utf8)
 }
@@ -24,5 +28,5 @@ func makeError() -> Error {
 }
 
 func makeHttpResponse(statusCode: Int = 200) -> HTTPURLResponse {
-    return HTTPURLResponse(url: makeUrl(), statusCode: 200, httpVersion: nil, headerFields: nil)!
+    return HTTPURLResponse(url: makeUrl(), statusCode: statusCode, httpVersion: nil, headerFields: nil)!
 }
