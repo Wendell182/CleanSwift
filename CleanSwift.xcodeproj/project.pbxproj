@@ -31,6 +31,7 @@
 		F50BB60C29242B4600598822 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5E52924199500598822 /* TestFactories.swift */; };
 		F50BB60F29242C8600598822 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F50BB60E29242C8600598822 /* Alamofire */; };
 		F50BB6132927E76700598822 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB6122927E76700598822 /* AlamofireAdapter.swift */; };
+		F50BB6162927F53B00598822 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB6152927F53B00598822 /* UrlProtocolStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		F50BB5F8292429FF00598822 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50BB5FD292429FF00598822 /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
 		F50BB6122927E76700598822 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		F50BB6152927F53B00598822 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				F50BB5FD292429FF00598822 /* AlamofireAdapterTests.swift */,
+				F50BB6152927F53B00598822 /* UrlProtocolStub.swift */,
 			);
 			path = InfraTests;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				F50BB60C29242B4600598822 /* TestFactories.swift in Sources */,
 				F50BB5FE292429FF00598822 /* AlamofireAdapterTests.swift in Sources */,
 				F50BB60B29242B3A00598822 /* TestExtensions.swift in Sources */,
+				F50BB6162927F53B00598822 /* UrlProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
