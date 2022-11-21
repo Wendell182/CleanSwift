@@ -40,6 +40,7 @@
 		F50BB645292BB19D00598822 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50BB5702923247A00598822 /* Domain.framework */; };
 		F50BB646292BB19D00598822 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F50BB5702923247A00598822 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F50BB64C292BB23A00598822 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB64B292BB23A00598822 /* AlertView.swift */; };
+		F50BB651292BBD5800598822 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB650292BBD5800598822 /* EmailValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,7 @@
 		F50BB63A29280C4D00598822 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		F50BB643292BB16900598822 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		F50BB64B292BB23A00598822 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		F50BB650292BBD5800598822 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +425,7 @@
 		F50BB62F29280C4D00598822 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F50BB64F292BBD4400598822 /* Validators */,
 				F50BB64A292BB22900598822 /* Views */,
 				F50BB64D292BB28900598822 /* Presenters */,
 			);
@@ -459,6 +462,14 @@
 				F50BB63A29280C4D00598822 /* SignUpPresenterTests.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		F50BB64F292BBD4400598822 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				F50BB650292BBD5800598822 /* EmailValidator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -845,6 +856,7 @@
 			files = (
 				F50BB644292BB16900598822 /* SignUpPresenter.swift in Sources */,
 				F50BB64C292BB23A00598822 /* AlertView.swift in Sources */,
+				F50BB651292BBD5800598822 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
