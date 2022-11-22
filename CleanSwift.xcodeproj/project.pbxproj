@@ -41,6 +41,7 @@
 		F50BB646292BB19D00598822 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F50BB5702923247A00598822 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F50BB64C292BB23A00598822 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB64B292BB23A00598822 /* AlertView.swift */; };
 		F50BB651292BBD5800598822 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB650292BBD5800598822 /* EmailValidator.swift */; };
+		F50BB652292CE81E00598822 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5EA29241A8100598822 /* AccountModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -864,6 +865,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50BB652292CE81E00598822 /* AccountModelFactory.swift in Sources */,
 				F50BB63B29280C4D00598822 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

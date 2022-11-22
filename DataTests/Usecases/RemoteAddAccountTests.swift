@@ -80,8 +80,4 @@ extension RemoteAddAccountTests {
         action()
         wait(for: [exp], timeout: 1)
     }
-    
-    func makeAddAccountModel() -> AddAccountModel {
-        return AddAccountModel(name: "tony", email: "any@email.com", password: "any_pasword", passwordConfirmation: "any_password")
-    }
 }
