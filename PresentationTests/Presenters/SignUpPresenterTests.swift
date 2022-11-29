@@ -114,9 +114,10 @@ class SignUpPresenterTests: XCTestCase {
         wait(for: [exp], timeout: 1)
     }
 
-    func test_signUp_should_show_loading_before_call_addAccount() {
+    func test_signUp_should_show_loading_before_and_after_addAccount() {
         let loadinViewSpy = LoadingViewSpy()
-        let sut = makeSut(loadingView: loadinViewSpy)
+        let addAccountSpy = AddAccountSpy()
+        let sut = makeSut(addAccount: addAccountSpy, loadingView: loadinViewSpy)
         let exp = expectation(description: "waiting")
         loadinViewSpy.observe { viewModel in
             XCTAssertEqual(viewModel, LoadingViewModel(isLoading: true))
@@ -124,6 +125,14 @@ class SignUpPresenterTests: XCTestCase {
         }
         sut.signUp(viewModel: makeSignUpViewModel())
         wait(for: [exp], timeout: 1)
+        let exp2 = expectation(description: "waiting")
+        loadinViewSpy.observe { viewModel in
+            XCTAssertEqual(viewModel, LoadingViewModel(isLoading: false))
+            exp2.fulfill()
+        }
+        addAccountSpy.completeWithError(error: .unexpected)
+        wait(for: [exp2], timeout: 1)
+
     }
 }
 
