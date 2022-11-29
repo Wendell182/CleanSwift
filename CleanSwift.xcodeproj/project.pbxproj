@@ -50,6 +50,7 @@
 		F5325269293678790009B72B /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5325268293678790009B72B /* EmailValidatorSpy.swift */; };
 		F532526C293678D40009B72B /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532526B293678D40009B72B /* AddAccountSpy.swift */; };
 		F532526E293679220009B72B /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532526D293679220009B72B /* LoadingViewSpy.swift */; };
+		F5325271293679CB0009B72B /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5325270293679CB0009B72B /* TestFactories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +192,7 @@
 		F5325268293678790009B72B /* EmailValidatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorSpy.swift; sourceTree = "<group>"; };
 		F532526B293678D40009B72B /* AddAccountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountSpy.swift; sourceTree = "<group>"; };
 		F532526D293679220009B72B /* LoadingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewSpy.swift; sourceTree = "<group>"; };
+		F5325270293679CB0009B72B /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +453,7 @@
 		F50BB63929280C4D00598822 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
+				F532526F293679B40009B72B /* Helpers */,
 				F532526A293678C10009B72B /* UseCases */,
 				F5325267293678680009B72B /* Validators */,
 				F5325264293678060009B72B /* Views */,
@@ -533,6 +536,14 @@
 				F532526B293678D40009B72B /* AddAccountSpy.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F532526F293679B40009B72B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5325270293679CB0009B72B /* TestFactories.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -936,6 +947,7 @@
 				F50BB652292CE81E00598822 /* AccountModelFactory.swift in Sources */,
 				F5325269293678790009B72B /* EmailValidatorSpy.swift in Sources */,
 				F50BB653292CF94E00598822 /* TestExtensions.swift in Sources */,
+				F5325271293679CB0009B72B /* TestFactories.swift in Sources */,
 				F50BB63B29280C4D00598822 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
