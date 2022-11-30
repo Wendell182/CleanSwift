@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F50BB5F0292429FF00598822"
-               BuildableName = "Infra.framework"
-               BlueprintName = "Infra"
+               BlueprintIdentifier = "F50BB62D29280C4D00598822"
+               BuildableName = "Presentation.framework"
+               BlueprintName = "Presentation"
                ReferencedContainer = "container:CleanSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,27 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      enableThreadSanitizer = "YES"
-      codeCoverageEnabled = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES">
-      <CodeCoverageTargets>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F50BB5F0292429FF00598822"
-            BuildableName = "Infra.framework"
-            BlueprintName = "Infra"
-            ReferencedContainer = "container:CleanSwift.xcodeproj">
-         </BuildableReference>
-      </CodeCoverageTargets>
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO"
-            testExecutionOrdering = "random">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F50BB5F7292429FF00598822"
-               BuildableName = "InfraTests.xctest"
-               BlueprintName = "InfraTests"
+               BlueprintIdentifier = "F50BB63429280C4D00598822"
+               BuildableName = "PresentationTests.xctest"
+               BlueprintName = "PresentationTests"
                ReferencedContainer = "container:CleanSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -73,9 +61,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F50BB5F0292429FF00598822"
-            BuildableName = "Infra.framework"
-            BlueprintName = "Infra"
+            BlueprintIdentifier = "F50BB62D29280C4D00598822"
+            BuildableName = "Presentation.framework"
+            BlueprintName = "Presentation"
             ReferencedContainer = "container:CleanSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

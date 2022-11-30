@@ -13,14 +13,14 @@ class RemoteAddAccountTests: XCTestCase {
     func test_add_should_call_httpClient_with_correct_url() {
         let url = makeUrl()
         let (sut, httpClientSpy) = makeSut(url: url)
-        sut.add(addCccountModel: makeAddAccountModel()) { _ in }
+        sut.add(addAccountModel: makeAddAccountModel()) { _ in }
         XCTAssertEqual(httpClientSpy.urls, [url])
     }
     
     func test_add_should_call_httpClient_with_correct_data() {
         let (sut, httpClientSpy) = makeSut()
         let addAccountModel = makeAddAccountModel()
-        sut.add(addCccountModel: addAccountModel) { _ in }
+        sut.add(addAccountModel: addAccountModel) { _ in }
         XCTAssertEqual(httpClientSpy.data, addAccountModel.toData())
     }
     
@@ -50,7 +50,7 @@ class RemoteAddAccountTests: XCTestCase {
         let httpClientSpy = HttpClientSpy()
         var sut: RemoteAddAccount? = RemoteAddAccount(url: makeUrl(), httpClient: httpClientSpy)
         var result: Result<AccountModel, DomainError>?
-        sut?.add(addCccountModel: makeAddAccountModel()) { result = $0 }
+        sut?.add(addAccountModel: makeAddAccountModel()) { result = $0 }
         sut = nil
         httpClientSpy.completeWithError(.noConnectivityError)
         XCTAssertNil(result)
@@ -69,7 +69,7 @@ extension RemoteAddAccountTests {
     
     func expect(_ sut: RemoteAddAccount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         let exp = expectation(description: "waiting")
-        sut.add(addCccountModel: makeAddAccountModel()) { receivedResult in
+        sut.add(addAccountModel: makeAddAccountModel()) { receivedResult in
             switch (expectedResult, receivedResult) {
             case (.failure(let expectedError), .failure(let receivedError)): XCTAssertEqual(expectedError, receivedError, file: file, line: line)
             case (.success(let expectedAccount), .success(let receivedAccount)): XCTAssertEqual(expectedAccount, receivedAccount, file: file, line: line)
