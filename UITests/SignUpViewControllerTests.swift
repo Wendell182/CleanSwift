@@ -8,6 +8,7 @@
 import XCTest
 import UIKit
 @testable import UI
+import Presentation
 
 class SignUpViewControllerTests: XCTestCase {
     func test_loading_is_hidden_on_start() {
@@ -19,3 +20,4 @@ class SignUpViewControllerTests: XCTestCase {
 
 }
   
+
