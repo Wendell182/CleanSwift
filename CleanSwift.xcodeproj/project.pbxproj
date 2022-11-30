@@ -55,6 +55,8 @@
 		F532528429377C100009B72B /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532528329377C100009B72B /* SignUpViewControllerTests.swift */; };
 		F532528C29377F690009B72B /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50BB62E29280C4D00598822 /* Presentation.framework */; };
 		F532528D29377F690009B72B /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F50BB62E29280C4D00598822 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F59FA2452937BD8F003D5B2D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2442937BD8F003D5B2D /* SignUpViewController.swift */; };
+		F59FA2472937BDDB003D5B2D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59FA2462937BDDB003D5B2D /* SignUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,8 @@
 		F532527729377C100009B72B /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F532527E29377C100009B72B /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F532528329377C100009B72B /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
+		F59FA2442937BD8F003D5B2D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F59FA2462937BDDB003D5B2D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -601,6 +605,8 @@
 		F532527829377C100009B72B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F59FA2442937BD8F003D5B2D /* SignUpViewController.swift */,
+				F59FA2462937BDDB003D5B2D /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -887,6 +893,7 @@
 					};
 					F532527629377C100009B72B = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					F532527D29377C100009B72B = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -984,6 +991,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59FA2472937BDDB003D5B2D /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1090,6 +1098,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59FA2452937BD8F003D5B2D /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1671,6 +1680,7 @@
 		F532528729377C100009B72B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1694,6 +1704,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1701,6 +1712,7 @@
 		F532528829377C100009B72B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1731,6 +1743,7 @@
 		F532528A29377C100009B72B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1740,6 +1753,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				"SDKROOT[arch=*]" = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1748,6 +1762,7 @@
 		F532528B29377C100009B72B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1756,6 +1771,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = claus.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
