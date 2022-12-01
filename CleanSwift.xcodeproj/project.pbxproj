@@ -57,6 +57,7 @@
 		F532528D29377F690009B72B /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F50BB62E29280C4D00598822 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F59FA2452937BD8F003D5B2D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2442937BD8F003D5B2D /* SignUpViewController.swift */; };
 		F59FA2472937BDDB003D5B2D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59FA2462937BDDB003D5B2D /* SignUp.storyboard */; };
+		F59FA24E2938D960003D5B2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA24D2938D960003D5B2D /* TestExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 		F532528329377C100009B72B /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		F59FA2442937BD8F003D5B2D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F59FA2462937BDDB003D5B2D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		F59FA24D2938D960003D5B2D /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -613,6 +615,7 @@
 		F532528229377C100009B72B /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				F59FA24C2938D923003D5B2D /* Helpers */,
 				F59FA24B2938D8FE003D5B2D /* Scenes */,
 			);
 			path = UITests;
@@ -649,6 +652,14 @@
 				F59FA2492938D8C0003D5B2D /* SignUp */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F59FA24C2938D923003D5B2D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F59FA24D2938D960003D5B2D /* TestExtensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1139,6 +1150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F532528429377C100009B72B /* SignUpViewControllerTests.swift in Sources */,
+				F59FA24E2938D960003D5B2D /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
