@@ -81,7 +81,9 @@
 		F59FA29E29391D4A003D5B2D /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F532527729377C100009B72B /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F59FA2A129391D4A003D5B2D /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59FA25929390D0D003D5B2D /* Validation.framework */; platformFilter = ios; };
 		F59FA2A229391D4A003D5B2D /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F59FA25929390D0D003D5B2D /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F59FA2A829391DC1003D5B2D /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2A729391DC1003D5B2D /* SignUpFactory.swift */; };
+		F59FA2A829391DC1003D5B2D /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2A729391DC1003D5B2D /* ControllerFactory.swift */; };
+		F59FA2AA2939331D003D5B2D /* UseCaseFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2A92939331D003D5B2D /* UseCaseFactories.swift */; };
+		F59FA2AD293933CC003D5B2D /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2AC293933CC003D5B2D /* SignUpComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -350,7 +352,9 @@
 		F59FA28429391BE0003D5B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59FA28729391BE0003D5B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59FA28929391BE0003D5B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F59FA2A729391DC1003D5B2D /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
+		F59FA2A729391DC1003D5B2D /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		F59FA2A92939331D003D5B2D /* UseCaseFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactories.swift; sourceTree = "<group>"; };
+		F59FA2AC293933CC003D5B2D /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -846,6 +850,7 @@
 		F59FA27A29391BDD003D5B2D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F59FA2AB293933BC003D5B2D /* Composers */,
 				F59FA2A629391DAE003D5B2D /* Factories */,
 				F59FA27B29391BDD003D5B2D /* AppDelegate.swift */,
 				F59FA27D29391BDD003D5B2D /* SceneDelegate.swift */,
@@ -859,9 +864,18 @@
 		F59FA2A629391DAE003D5B2D /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				F59FA2A729391DC1003D5B2D /* SignUpFactory.swift */,
+				F59FA2A729391DC1003D5B2D /* ControllerFactory.swift */,
+				F59FA2A92939331D003D5B2D /* UseCaseFactories.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		F59FA2AB293933BC003D5B2D /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				F59FA2AC293933CC003D5B2D /* SignUpComposer.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1484,8 +1498,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59FA27C29391BDD003D5B2D /* AppDelegate.swift in Sources */,
-				F59FA2A829391DC1003D5B2D /* SignUpFactory.swift in Sources */,
+				F59FA2A829391DC1003D5B2D /* ControllerFactory.swift in Sources */,
+				F59FA2AA2939331D003D5B2D /* UseCaseFactories.swift in Sources */,
 				F59FA27E29391BDD003D5B2D /* SceneDelegate.swift in Sources */,
+				F59FA2AD293933CC003D5B2D /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1861,6 +1877,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = claus.DataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1878,6 +1895,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = claus.DataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1958,6 +1976,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = claus.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1975,6 +1994,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = claus.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
