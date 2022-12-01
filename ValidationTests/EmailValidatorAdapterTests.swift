@@ -20,7 +20,7 @@ public final class EmailValidatorAdapter: EmailValidator {
 
 class EmailValidatorAdapterTests: XCTestCase {
     func test_invalid_emials() {
-        let sut = EmailValidatorAdapter()
+        let sut = makeSut()
         XCTAssertFalse(sut.isValid(email: "tf"))
         XCTAssertFalse(sut.isValid(email: "tf@"))
         XCTAssertFalse(sut.isValid(email: "for@toni"))
@@ -29,10 +29,16 @@ class EmailValidatorAdapterTests: XCTestCase {
     }
     
     func test_valid_emials() {
-        let sut = EmailValidatorAdapter()
+        let sut = makeSut()
         XCTAssertTrue(sut.isValid(email: "wendellclaus.42@gmail.com"))
         XCTAssertTrue(sut.isValid(email: "wendellclaus.42@hotmail.com"))
-        XCTAssertTrue(sut.isValid(email: "wendellclaus.42@forms.com"))       
+        XCTAssertTrue(sut.isValid(email: "wendellclaus.42@forms.com"))
     }
 
+}
+
+extension EmailValidatorAdapterTests {
+    func makeSut() -> EmailValidatorAdapter {
+        return EmailValidatorAdapter()
+    }
 }
