@@ -88,6 +88,7 @@
 		F59FA2BF29393815003D5B2D /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2AF2939362D003D5B2D /* SignUpIntegrationTests.swift */; };
 		F59FA2C029393826003D5B2D /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532526B293678D40009B72B /* AddAccountSpy.swift */; };
 		F59FA2C129393853003D5B2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5E3292418EC00598822 /* TestExtensions.swift */; };
+		F59FA2C42939898D003D5B2D /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,6 +370,7 @@
 		F59FA2AF2939362D003D5B2D /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		F59FA2B629393785003D5B2D /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59FA2B829393785003D5B2D /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -874,6 +876,7 @@
 		F59FA27A29391BDD003D5B2D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F59FA2C229398979003D5B2D /* Proxies */,
 				F59FA2AB293933BC003D5B2D /* Composers */,
 				F59FA2A629391DAE003D5B2D /* Factories */,
 				F59FA27B29391BDD003D5B2D /* AppDelegate.swift */,
@@ -916,6 +919,14 @@
 				F59FA2B829393785003D5B2D /* MainTests.swift */,
 			);
 			path = MainTests;
+			sourceTree = "<group>";
+		};
+		F59FA2C229398979003D5B2D /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */,
+			);
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1571,6 +1582,7 @@
 				F59FA2A829391DC1003D5B2D /* ControllerFactory.swift in Sources */,
 				F59FA2AA2939331D003D5B2D /* UseCaseFactories.swift in Sources */,
 				F59FA27E29391BDD003D5B2D /* SceneDelegate.swift in Sources */,
+				F59FA2C42939898D003D5B2D /* WeakVarProxy.swift in Sources */,
 				F59FA2AD293933CC003D5B2D /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
