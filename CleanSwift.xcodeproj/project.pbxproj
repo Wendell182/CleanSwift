@@ -88,6 +88,7 @@
 		F59FA2C029393826003D5B2D /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532526B293678D40009B72B /* AddAccountSpy.swift */; };
 		F59FA2C129393853003D5B2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5E3292418EC00598822 /* TestExtensions.swift */; };
 		F59FA2C42939898D003D5B2D /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */; };
+		F59FA2C929399618003D5B2D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C829399618003D5B2D /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,6 +370,9 @@
 		F59FA2B629393785003D5B2D /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59FA2B829393785003D5B2D /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 		F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
+		F59FA2C6293994C5003D5B2D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		F59FA2C729399552003D5B2D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		F59FA2C829399618003D5B2D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -874,6 +878,7 @@
 		F59FA27A29391BDD003D5B2D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F59FA2C52939948E003D5B2D /* Env */,
 				F59FA2C229398979003D5B2D /* Proxies */,
 				F59FA2AB293933BC003D5B2D /* Composers */,
 				F59FA2A629391DAE003D5B2D /* Factories */,
@@ -924,6 +929,16 @@
 				F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */,
 			);
 			path = Proxies;
+			sourceTree = "<group>";
+		};
+		F59FA2C52939948E003D5B2D /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				F59FA2C6293994C5003D5B2D /* Debug.xcconfig */,
+				F59FA2C729399552003D5B2D /* Release.xcconfig */,
+				F59FA2C829399618003D5B2D /* Environment.swift */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1576,6 +1591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59FA27C29391BDD003D5B2D /* AppDelegate.swift in Sources */,
+				F59FA2C929399618003D5B2D /* Environment.swift in Sources */,
 				F59FA2AA2939331D003D5B2D /* UseCaseFactories.swift in Sources */,
 				F59FA27E29391BDD003D5B2D /* SceneDelegate.swift in Sources */,
 				F59FA2C42939898D003D5B2D /* WeakVarProxy.swift in Sources */,
@@ -2423,6 +2439,7 @@
 		};
 		F59FA28B29391BE0003D5B2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59FA2C6293994C5003D5B2D /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2450,6 +2467,7 @@
 		};
 		F59FA28C29391BE0003D5B2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59FA2C729399552003D5B2D /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

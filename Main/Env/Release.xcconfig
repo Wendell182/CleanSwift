@@ -1,0 +1,11 @@
+//
+//  Release.xcconfig
+//  CleanSwift
+//
+//  Created by Wendell Claus on 01/12/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_BASE_URL = https:/$()/clean-node-api.herokuapp.com/api
