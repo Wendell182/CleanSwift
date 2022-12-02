@@ -84,7 +84,7 @@
 		F59FA2AA2939331D003D5B2D /* UseCaseFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2A92939331D003D5B2D /* UseCaseFactories.swift */; };
 		F59FA2AD293933CC003D5B2D /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2AC293933CC003D5B2D /* SignUpComposer.swift */; };
 		F59FA2B929393785003D5B2D /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2B829393785003D5B2D /* MainTests.swift */; };
-		F59FA2BF29393815003D5B2D /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2AF2939362D003D5B2D /* SignUpIntegrationTests.swift */; };
+		F59FA2BF29393815003D5B2D /* SignUpComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2AF2939362D003D5B2D /* SignUpComposerTests.swift */; };
 		F59FA2C029393826003D5B2D /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532526B293678D40009B72B /* AddAccountSpy.swift */; };
 		F59FA2C129393853003D5B2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5E3292418EC00598822 /* TestExtensions.swift */; };
 		F59FA2C42939898D003D5B2D /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */; };
@@ -366,7 +366,7 @@
 		F59FA28929391BE0003D5B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59FA2A92939331D003D5B2D /* UseCaseFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactories.swift; sourceTree = "<group>"; };
 		F59FA2AC293933CC003D5B2D /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
-		F59FA2AF2939362D003D5B2D /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		F59FA2AF2939362D003D5B2D /* SignUpComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposerTests.swift; sourceTree = "<group>"; };
 		F59FA2B629393785003D5B2D /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59FA2B829393785003D5B2D /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 		F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
@@ -910,7 +910,7 @@
 		F59FA2AE293935BD003D5B2D /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
-				F59FA2AF2939362D003D5B2D /* SignUpIntegrationTests.swift */,
+				F59FA2CB2939A050003D5B2D /* Composers */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -939,6 +939,14 @@
 				F59FA2C829399618003D5B2D /* Environment.swift */,
 			);
 			path = Env;
+			sourceTree = "<group>";
+		};
+		F59FA2CB2939A050003D5B2D /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				F59FA2AF2939362D003D5B2D /* SignUpComposerTests.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1604,7 +1612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59FA2C029393826003D5B2D /* AddAccountSpy.swift in Sources */,
-				F59FA2BF29393815003D5B2D /* SignUpIntegrationTests.swift in Sources */,
+				F59FA2BF29393815003D5B2D /* SignUpComposerTests.swift in Sources */,
 				F59FA2B929393785003D5B2D /* MainTests.swift in Sources */,
 				F59FA2C129393853003D5B2D /* TestExtensions.swift in Sources */,
 			);
