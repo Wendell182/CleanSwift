@@ -89,6 +89,7 @@
 		F59FA2C129393853003D5B2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BB5E3292418EC00598822 /* TestExtensions.swift */; };
 		F59FA2C42939898D003D5B2D /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */; };
 		F59FA2C929399618003D5B2D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C829399618003D5B2D /* Environment.swift */; };
+		F59FA2CC2939A416003D5B2D /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5325270293679CB0009B72B /* TestFactories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1613,6 +1614,7 @@
 			files = (
 				F59FA2C029393826003D5B2D /* AddAccountSpy.swift in Sources */,
 				F59FA2BF29393815003D5B2D /* SignUpComposerTests.swift in Sources */,
+				F59FA2CC2939A416003D5B2D /* TestFactories.swift in Sources */,
 				F59FA2B929393785003D5B2D /* MainTests.swift in Sources */,
 				F59FA2C129393853003D5B2D /* TestExtensions.swift in Sources */,
 			);
