@@ -90,6 +90,7 @@
 		F59FA2C42939898D003D5B2D /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C32939898D003D5B2D /* WeakVarProxy.swift */; };
 		F59FA2C929399618003D5B2D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2C829399618003D5B2D /* Environment.swift */; };
 		F59FA2CC2939A416003D5B2D /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5325270293679CB0009B72B /* TestFactories.swift */; };
+		F59FA2CF2939AE28003D5B2D /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FA2CE2939AE28003D5B2D /* MainQueueDispatchDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -374,6 +375,7 @@
 		F59FA2C6293994C5003D5B2D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		F59FA2C729399552003D5B2D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		F59FA2C829399618003D5B2D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F59FA2CE2939AE28003D5B2D /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -879,6 +881,7 @@
 		F59FA27A29391BDD003D5B2D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F59FA2CD2939ADE8003D5B2D /* Decorators */,
 				F59FA2C52939948E003D5B2D /* Env */,
 				F59FA2C229398979003D5B2D /* Proxies */,
 				F59FA2AB293933BC003D5B2D /* Composers */,
@@ -948,6 +951,14 @@
 				F59FA2AF2939362D003D5B2D /* SignUpComposerTests.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		F59FA2CD2939ADE8003D5B2D /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				F59FA2CE2939AE28003D5B2D /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1600,6 +1611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59FA27C29391BDD003D5B2D /* AppDelegate.swift in Sources */,
+				F59FA2CF2939AE28003D5B2D /* MainQueueDispatchDecorator.swift in Sources */,
 				F59FA2C929399618003D5B2D /* Environment.swift in Sources */,
 				F59FA2AA2939331D003D5B2D /* UseCaseFactories.swift in Sources */,
 				F59FA27E29391BDD003D5B2D /* SceneDelegate.swift in Sources */,
