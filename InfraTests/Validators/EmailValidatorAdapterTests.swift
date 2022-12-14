@@ -6,8 +6,7 @@
 //
 
 import XCTest
-import Presentation
-import Validation
+import Infrab
 
 class EmailValidatorAdapterTests: XCTestCase {
     func test_invalid_emials() {
